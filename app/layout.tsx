@@ -1,5 +1,6 @@
 import '@fontsource/inter/variable.css'
 import '@styles/globals.css'
+import ReactQueryWrapper from './ReactQueryWrapper'
 
 export default function RootLayout({
   children,
@@ -9,7 +10,9 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <ReactQueryWrapper>{children}</ReactQueryWrapper>
+      </body>
     </html>
   )
 }
