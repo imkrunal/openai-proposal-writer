@@ -27,8 +27,7 @@ const Home = () => {
         onSubmit={(v) =>
           generateProposal.mutate(v, {
             onSuccess: (res) => {
-              const data = map(res.choices, 'text')
-              setProposal(data)
+              console.log(res, 'here')
             },
           })
         }
